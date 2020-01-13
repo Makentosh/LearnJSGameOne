@@ -105,34 +105,3 @@ function renderBox() {
    box.setAttribute('data-box', 'true')
    $game.insertAdjacentElement("afterbegin", box)
 }
-
-
-
-function getRandom(min, max) {
-    return Math.floor(Math.random() * (max - min) + min)
-}
-
-
-function rating() {
-
-    let clientAnswer = prompt('Введите оценку по 100 бальной шкале')
-    
-    if(clientAnswer >= 90 ) {
-        alert('Ваша оценка А')
-    } else if (clientAnswer >= 80) {
-        alert('Ваша оценка B')
-    } else if (clientAnswer >= 80) {
-        alert('Ваша оценка B')
-    } else if (clientAnswer >= 70) {
-        alert('Ваша оценка C')
-    } else if (clientAnswer >= 60) {
-        alert('Ваша оценка D')
-    } else {
-        alert('Ваша оценка F')
-    }
-
-  
-    
-}
-
-rating()
