@@ -105,3 +105,7 @@ function renderBox() {
    box.setAttribute('data-box', 'true')
    $game.insertAdjacentElement("afterbegin", box)
 }
+
+function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min) + min)
+}
